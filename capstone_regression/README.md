@@ -1,31 +1,24 @@
-# Predicting home prices with regression
+# Predicting home prices with linear, lasso, ridge and random forest regression
 
-This project focuses on predicting the sales price of homes using linear and random forest regression. This project is a learning exercise I undertook as part of Springboard’s data science bootcamp.  Below I've listed the key documents as well as the top findings
+This project focuses on predicting the sales price of homes using a variety of regression techniques. This project is a learning exercise I completed as part of Springboard’s data science bootcamp. Below I briefly summarize the project and list some key documents.
+
+## Summary
+
+“What will my home sell for?” In this project, I predict the sales prices of homes.
+
+The data comes from a Kaggle competition. The data is a well-know training set called the “Ames Housing Dataset.” It includes about 1,500 observations of the sales price of of residential properties in  Ames, Iowa.  The data also includes about 80 features describing the home, such as the number of rooms, number of bathrooms, year built, the size of the house, etc. 
+
+The task is to predict the sales price of another 1,500 or so homes in Ames.  To do this, I clean the data, do exploratory analysis, and select relevant features.  I model with regression techniques including linear, lasso, ridge, and random forest regression. 
+
+Here are some highlights of this project:
+
+-   I select only 12 of the 79 features as many were highly correlated;
+-   On this data, a normalized linear regression model outperforms ridge regression, lasso regression, and random forrest regression (across different feature combinations), with a RMSE, MAE, and R2 of 0.1509, 0.1095 and 0.8578, respectively; and
+-   I predict prices and create a prediction intervals at a 95% confidence level.
 
 ## Key documents
 
-Here are the key documents and their enclosing directories.
+Here are the key documents and their directories.
 
-The project's documents directory includes:
-
-*   A final report and 
-*   A final presentation.
-
-The code directory includes Jupyter notebooks focused on:
-
-* Cleaning the source data,
-* Exploring the target variable--the sales price of homes,
-* Exploring features--about 80 variables, such as size, quality, and location of homes,
-* Modeling with linear regression, including OLS, Ridge and Lasso, and
-* Modeling with random forest regression
-
-The data directory includes the original data set--a collection of prices and home features from about 750 sales in Ames, Iowa during the late 2000s. This directory, however, excludes the interim files produced and consumed by the various notebooks.
-
-## Top findings
-
-Here are some highlights of what I found.  For details, please look at the final report.
-
-*   On this data, the normalized linear regression model outperformed Ridge regression, Lasso regression, and Random forrest regression (across different feature combinations), with a RMSE, MAE, and R2 of 0.1509, 0.1095 and 0.8578, respectively.
-*   I was able to predict prices and create prediction intervals at a 95% confidence level.
-*   I ended up using only 12 of the 79 features as many were highly correlated.
-
+-   The project’s report is in the docs directory; and
+-   The five Jupiter notebooks focus on: cleaning the source data, exploring the target variable, selecting features, modeling with linear regression, including OLS, ridge, and lasso, and modeling with random forest regression. Generally, each notebook maps to a step in my process, and the numbers in the notebook’s filenames correspond to sections of the report.

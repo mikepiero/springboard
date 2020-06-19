@@ -1,0 +1,43 @@
+approach,variation,summary,city,data,transform,rmse,mae
+naive,1,average method,san juan,test,none,32.39316633967006,28.027284681130833
+naive,1,average method,san juan,train,none,56.61244683172498,33.00052415424485
+naive,2,naive method,san juan,test,none,32.87342989653488,28.713675213675213
+naive,2,naive method,san juan,train,none,14.52721387392156,8.495007132667618
+naive,3,seasonal naive method,san juan,test,none,35.95456534615276,21.337606837606838
+naive,3,seasonal naive method,san juan,train,none,81.50416695340938,42.003076923076925
+naive,4,average method,iquitos,test,none,11.261033176672889,7.647913774801995
+naive,4,average method,iquitos,train,none,11.219506028426892,6.831526559675647
+naive,5,naive method,iquitos,test,none,13.79188950855597,8.162162162162161
+naive,5,naive method,iquitos,train,none,8.913557940099741,4.803030303030303
+naive,6,seasonal naive method,iquitos,test,none,16.476846982553624,9.91891891891892
+naive,6,seasonal naive method,iquitos,train,none,16.092808786027874,9.372759856630825
+ARIMA,1,"SARMIA (3, 1, 2) x (0, 0, 0, 52)",san juan,test,none,29.48290948599558,18.70752053449009
+ARIMA,2,"SARIMAX (2, 1, 2) x (2, 0, 1, 52)",san juan,test,log(x+1),26.606072124498763,15.849435701163625
+ARIMA,3,"SARMIAX (1, 0, 4) x (2, 0, 0, 52)",iquitos,test,none,11.023207477700197,7.021881509317589
+ARIMA,4,"SARMIAX (1, 0, 1) x (0, 0, 0, 52)",iquitos,test,log(x+1),11.954235747555114,6.764148147391149
+exponential smoothing,1,"simpleES, a=1.0, optimized",san juan,test,none,32.87342989653488,28.713675213675213
+exponential smoothing,2,"simpleES, a=.2",san juan,test,none,30.28282767797995,24.523897669619327
+exponential smoothing,3,"simpleES, a=.8",san juan,test,none,32.11322642724686,27.610875221188852
+exponential smoothing,4,"simpleES, a=0",san juan,test,none,34.12364395727802,19.08974358974359
+exponential smoothing,5,"trendES, a=1, b=0, optimized",san juan,test,none,36.07292233413972,32.81386328999137
+exponential smoothing,6,"trendES, a=.8, b=.2",san juan,test,none,170.64034858122147,151.07768439639818
+exponential smoothing,7,"trendES, a=.8, b=.2, dampen",san juan,test,none,33.275934846271724,29.268916555699015
+exponential smoothing,8,"trendES, a=.2, b=.8, dampen",san juan,test,none,30.282987097753853,24.52419563448497
+exponential smoothing,9,"seasonalES, a=.9, b=.8, g=.1, optimized",san juan,test,none,28.602235412998244,17.1384525308994
+exponential smoothing,10,"seasonalES, a=.5, b=.1, g=0, optimized",san juan,test,lox(x+1),26.54394959284787,15.536583790920483
+exponential smoothing,11,"seasonalES, a=.6, b=0, g=0, optimized",iquitos,test,none,12.825164658150008,8.147399583991204
+exponential smoothing,12,"seasonalES, a=.4, b=.4, g=.2, optimized",iquitos,test,log(x+1),12.98922584736881,7.853347502061799
+additive,1,default,san juan,test,none,40.39093932478329,30.960815233304444
+additive,2,stabilized trend,san juan,test,none,29.200444313978927,20.05167095258717
+additive,3,cap and floor,san juan,test,none,30.865402058728076,23.434220564600473
+additive,4,stabilized trend,san juan,test,log(x+1),28.704713786725833,14.594313419592666
+additive,5,cap and floor,san juan,test,log(x+1),29.944418569069075,14.636217154613204
+additive,6,stabilized trend,iquitos,test,log(x+1),11.724511862443958,6.519296888483426
+LSTM,1,simple,san juan,test,none,37.15878705322992,25.12581050844911
+LSTM,2,stacked,san juan,test,none,36.52702283296432,24.492901506714333
+LSTM,3,"stacked, 2.5x nodes",san juan,test,none,36.88965866918068,25.021938437006924
+LSTM,4,bidirectional,san juan,test,none,43.22336508313277,30.29966036338582
+LSTM,5,CNN-LSTM,san juan,test,none,35.0536287947336,22.7548674234213
+LSTM,6,ConvLSTM,san juan,test,none,35.03048599969439,22.490631576754854
+LSTM,7,ConvLSTM,san juan,test,log(x+1),34.292298726492824,21.36260961425992
+LSTM,8,ConvLSTM,iquitos,test,log(x+1),12.508865047970268,7.436270279927297

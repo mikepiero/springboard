@@ -16,7 +16,7 @@ Here are some highlights of this project:
 -   On this data, a normalized linear regression model outperforms ridge regression, lasso regression, and random forrest regression (across different feature combinations), with a RMSE, MAE, and R2 of 0.1509, 0.1095 and 0.8578, respectively; and
 -   I predict prices and create a prediction intervals at a 95% confidence level.
 
-## Key documents
+## Documents
 
 Here are the key documents and their directories.
 

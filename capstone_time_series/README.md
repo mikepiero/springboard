@@ -12,9 +12,9 @@ To do so, I assess, explore, and prepare the data. I forecast using five approac
 
 The best performing model takes an additive approach using log-transformed data. I use Facebook's Prophet forecasting tool to implement this approach.
 
-## Key documents
+## Documents
 
 The key documents for this project are:
 
 -   A 20-page report, which is found in the docs directory, and
--   A collection of ten Jupiter notebooks, which are found in the notebooks directory. Generally, these notebooks are step in my process, and the numbers in the notebook's filenames correspond to the report's sections.
+-   A collection of ten Jupiter notebooks, which are found in the notebooks directory. Generally, these notebooks represent steps in my process, and the numbers in the notebook's filenames correspond to the report's sections.
